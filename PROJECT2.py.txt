@@ -1,0 +1,30 @@
+def project2():
+    import urllib
+    import webbrowser
+    print('''select your choice
+         1.Buy
+         2.Sell''')
+    ft=int(input('Enter choice no:'))
+    if ft==1:
+          print('''select your choice
+         1.Seeds
+         2.Fertilisers(artificial)
+         3.Fertilisers(organic)
+         4.Tools and Equipment
+         5.Pesticides
+         6.Insecticides
+         7.''')
+           st=int(input('Enter your choice'))
+           if st==1:
+               seedurl=webbrowser.open('')
+    elif ft==2:
+          print('''select your choice
+         1.Seeds
+         2.Fertilisers(artificial)
+         3.Fertilisers(organic)
+         4.Tools and Equipment
+         5.Pesticides
+         6.Insecticides
+         7.''')
+        
+        

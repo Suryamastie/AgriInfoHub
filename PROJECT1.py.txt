@@ -1,0 +1,268 @@
+def project1():
+    print('''           1.Know about different crops and trees
+             2.Gap to be leaved between crops
+             3.Irrigation
+             4.Decoratable crops
+             5.Yield gap
+             6.Verdenary services''')
+    q=int(input('Enter your choice no'))
+    if q==1:
+        print('''select crop
+               1.rice             21.ragi           41.pear             61.chick peas
+               2.wheat            22.potato         42.plum             62.tapioca
+               3.bajra            23.raddish        43.seasame seeds   63.cardamon
+               4.jowar            24.carrot         44.groundnut        64.redgram
+               5.drumstick        25.beetroot       45.sunflower        65.blackgram
+               6.ladys finger     26.sweet potato   46.rose             66.horsegram
+               7.snake gourd      27.turmeric       47.hibiscus         67.silk cotton
+               8.brinjal          28.watermelon     48.alovera          68.bottle gourd
+               9.tomato           29.lemon          49.coffee           69.pumpkin
+               10.beans           30.papaya         50.tea              70.cluster beans
+               11.mushroom        31.bannana        51.co co            71.broad bean
+               12.cabbage         32.mango          52.cashew           72.ridge gourd
+               13.cauliflower     33.guava          53.sugarcane        73.ivy gourd
+               14.cucumber        34.pomegranete    54.basil(thulasi)   74.bitter melon
+               15.coconut tree    35.orange         55.betel leaf       75.amla
+               16.green chilli    36.apple          56.maize            76.squash
+               17.onion           37.grapes         57.capcicum         77.cabbage turnip
+               18.ginger          38.pineapple      58.tropical  root   78.curryleaves
+               19.corianderleaves 39.jack Fruit     59.garlic
+               20.mintleaves      40.peach          60.pepper''')
+        e=int(input('Enter choice no:'))
+        rice=open(r'e:\history\1.txt','r')
+        wheat=open(r'e:\history\wheat.txt','r')
+        bajra=open(r'e:\history\bajra.txt','r')
+        jowar=open(r'e:\history\jowar.txt','r')
+        drumstick=open(r'e:\history\drumstick.txt','r')
+        ladysfinger=open(r'e:\history\ladysfinger.txt','r')
+        snakegourd=open(r'e:\history\snakegourd.txt','r')
+        brinjal=open(r'e:\history\brinjal.txt','r')
+        tomato=open(r'e:\history\tomato.txt','r')
+        beans=open(r'e:\history\beans.txt','r')
+        mushroom=open(r'e:\history\mushroom.txt','r')
+        cabbage=open(r'e:\history\cabbage.txt','r')
+        cauleliflower=open(r'e:\history\cauleliflower.txt','r')
+        cucumber=open(r'e:\history\cucumber.txt','r')
+        coconuttree=open(r'e:\history\coconut,txt','r')
+        greenchilli=open(r'e:\history\greenchilli.txt','r')
+        onion=open(r'e:\history\onion.txt','r')
+        ginger=open(r'e:\history\ginger.txt','r')
+        corianderleeves=open(r'e:\history\corianderleefs.txt','r')
+        mintleaves=open(r'e:\history\mintleeves.txt','r')
+        ragi=open(r'e:\history\ragi.txt','r')
+        potato=open(r'e:\history\potato.txt','r')
+        raddish=open(r'e:\history\raddish.txt','r')
+        carrot=open(r'e:\history\carrot.txt','r')
+        beetroot=open(r'e:\history\beetroot.txt','r')
+        sweetpotato=open(r'e:\history\sweetpotato.txt','r')
+        turmeric=open(r'e:\history\turmeric.txt','r')
+        watermelon=open(r'e:\history\watermelon.txt','r')
+        lemon=open(r'e:\history\lemon.txt','r')
+        papaya=open(r'e:\history\papaya.txt','r')
+        banana=open(r'e:\history\banana.txt','r')
+        mango=open(r'e:\history\mango.txt','r')
+        guava=open(r'e:\history\guava.txt','r')
+        pomegranete=open(r'e:\history\pomegranete.txt','r')
+        orange=open(r'e:\history\orange.txt','r')
+        apple=open(r'e:\history\apple.txt','r')
+        grapes=open(r'e:\history\grapes.txt','r')
+        pineapple=open(r'e:\history\pineapple.txt','r')
+        jackfruit=open(r'e:\history\jackfruit.txt','r')
+        peach=open(r'e:\history\peach.txt','r')
+        plum=open(r'e:\history\plum.txt','r')
+        seasameseeds=open(r'e:\history\seasameseeds.txt','r')
+        groundnut=open(r'e:\history\groundnut.txt','r')
+        sunflower=open(r'e:\history\sunflower.txt','r')
+        rose=open(r'e:\history\rose.txt','r')
+        hibiscus=open(r'e:\history\hibiscus.txt','r')
+        alovera=open(r'e:\history\alovera.txt','r')
+        coffee=open(r'e:\history\coffee.txt','r')
+        tea=open(r'e:\history\tea.txt','r')
+        coco=open(r'e:\history\coco.txt','r')
+        cashew=open(r'e:\history\cashew.txt','r')
+        sugarcane=open(r'e:\history\sugarcane.txt','r')
+        basil=open(r'e:\history\basil.txt','r')
+        betelleaf=open(r'e:\history\betelleaf.txt','r')
+        maize=open(r'e:\history\maize.txt','r')
+        capcicum=open(r'e:\history\capcicum.txt','r')
+        tropicalroot=open(r'e:\history\tropicalroot.txt','r')
+        garlic=open(r'e:\history\garlic.txt','r')
+        pepper=open(r'e:\history\pepper.txt','r')
+        chickpeas=open(r'e:\history\peas.txt','r')
+        tapioca=open(r'e:\history\tapioca.txt','r')
+        cardamon=open(r'e:\history\cardamon.txt','r')
+        redgram=open(r'e:\history\redgram.txt','r')
+        blackgram=open(r'e:\history\blackgram.txt','r')
+        horsegram=open(r'e:\history\horsegram.txt','r')
+        silkcotton=open(r'e:\history\silkcottton.txt','r')
+        bottlegourd=open(r'e:\history\bottlegourd.txt','r')
+        pumpkin=open(r'e:\history\pumpkin.txt','r')
+        clusterbeans=open(r'e:\history\clusterbeans.txt','r')
+        broadbean=open(r'e:\history\broadbean.txt','r')
+        ridgegourd=open(r'e:\history\ridgegourd.txt','r')
+        ivygourd=open(r'e:\history\ivygourd.txt','r')
+        bittermelon=open(r'e:\history\bittermelon.txt','r')
+        amla=open(r'e:\history\amla.txt','r')
+        squash=open(r'e:\history\squash.txt','r')
+        cabbageturnip=open(r'e:\history\cabbageturnip.txt','r')
+        curryleavees=open(r'e:\history\curryleaves.txt','r')
+        if e==1:
+            print(rice)
+        elif e==2:
+            print(wheat)
+        elif e==3:
+            print(bajra)
+        elif e==4:
+            print(jowar)
+        elif e==5:
+            print(drumstick)
+        elif e==6:
+            print(ladysfinger)
+        elif e==7:
+            print(snakegourd)
+        elif e==8:
+            print(brinjal)
+        elif e==9:
+            print(tomato)
+        elif e==10:
+            print(beans)
+        elif e==11:
+            print(mushroom)
+        elif e==12:
+            print(cabbage)
+        elif e==13:
+            print(cauleliflower)
+        elif e==14:
+            print(cucumber)
+        elif e==15:
+            print(coconuttree)
+        elif e==16:
+            print(greenchilli)
+        elif e==17:
+            print(onion)
+        elif e==18:
+            print(ginger)
+        elif e==19:
+            print(carianderleaves)
+        elif e==20:
+            print(mintleaves)
+        elif e==21:
+            print(ragi)
+        elif e==22:
+            print(potato)
+        elif e==23:
+            print(raddish)
+        elif e==24:
+            print(carrot)
+        elif e==25:
+            print(beetroot)
+        elif e==26:
+            print(sweetpotato)
+        elif e==27:
+            print(turmeric)
+        elif e==28:
+            print(watermelon)
+        elif e==29:
+            print(lemon)
+        elif e==30:
+            print(papaya)
+        elif e==31:
+            print(bannana)
+        elif e==32:
+            print(mango)
+        elif e==33:
+            print(guava)
+        elif e==34:
+            print(pomegranete)
+        elif e==35:
+            print(orange)
+        elif e==36:
+            print(apple)
+        elif e==37:
+            print(grapes)
+        elif e==38:
+            print(pineapple)
+        elif e==39:
+            print(jackfruit)
+        elif e==40:
+            print(peach)
+        elif e==41:
+            print(pear)
+        elif e==42:
+            print(plum)
+        elif e==43:
+            print(seasameseeds)
+        elif e==44:
+            print(groundnut)
+        elif e==45:
+            print(sunflower)
+        elif e==46:
+            print(rose)
+        elif e==47:
+            print(hibiscus)
+        elif e==48:
+            print(alovera)
+        elif e==49:
+            print(coffee)
+        elif e==50:
+            print(tea)
+        elif e==51:
+            print(coco)
+        elif e==52:
+            print(cashew)
+        elif e==53:
+            print(sugarcane)
+        elif e==54:
+            print(basil)
+        elif e==55:
+            print(betelleaf)
+        elif e==56:
+            print(maize)
+        elif e==57:
+            print(capcicum)
+        elif e==58:
+            print(tropicalroot)
+        elif e==59:
+            print(garlic)
+        elif e==60:
+            print(pepper)
+        elif e==61:
+            print(chickpeas)
+        elif e==62:
+            print(tapioca)
+        elif e==63:
+            print(cardamon)
+        elif e==64:
+            print(redgram)
+        elif e==65:
+            print(blackgram)
+        elif e==66:
+            print(horsegram)
+        elif e==67:
+            print(silkcotton)
+        elif e==68:
+            print(bottlegourd)
+        elif e==69:
+            print(pumpkin)
+        elif e==70:
+            print(clusterbeans)
+        elif e==71:
+            print(broadbean)
+        elif e==72:
+            print(ridgegourd)
+        elif e==73:
+            print(ivygourd)
+        elif e==74:
+            print(bittermelon)
+        elif e==75:
+            print(amla)
+        elif e==76:
+            print(squash)
+        elif e==77:
+            print(cabbage)
+        elif e==78:
+            print(curryleaves)
+        else:
+            print('Enter correct choice no correctly')
+            
+    

@@ -1,0 +1,16 @@
+print('''select crop name
+            1.Paddy        16.Cotton      31.Turmeric           46.Raw Rubber
+            2.Ragi         17.Tomato      32.Ginger             47.Knol Knol
+            3.Cholam       18.Chillies    33.Coconut            48.White Garlic
+            4.Maize        19.Cabbage     34.Arecanut           49.Orange
+            5.Cumbu        20.Cauiflower  35.Onion              50.Sunflower seeds
+            6.Redgram      21.Carrot      36.Tobacco            51.Cotton Seeds
+            7.Blackgram    22.Beetroot    37.Beans
+            8.Greengram    23.Potato      38.Cashew
+            9.Cowpea       24.Tapioca     39.Varagu
+            10.Horsegram   25.Mango       40.Samai
+            11.Lab-Lab     26.Banana      41.Tenai
+            12.Groundnut   27.Grapes      42.Sugarcane Jaggery
+            13.Gingeely    28.Cardamom    43.Palmsugar Jaggery
+            14.Sunflower   29.Coriander   44.Neem seeds
+            15.Castor      30.Tamarind    45.Silk Cotton''')

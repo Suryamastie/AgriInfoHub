@@ -1,0 +1,86 @@
+def weather():
+    import urllib
+    import webbrowser
+    import districtnames
+    district()
+    da=int(input('Enter choice no:'))
+    if da==1:
+        webbrowser.open('https://weather.com/en-IN/weather/today/l/11.14,79.08?par=google&temp=c')
+    if da==2:
+        webbrowser.open('https://weather.com/en-IN/weather/today/l/12.68,79.99?par=google&temp=c')
+    if da==3:
+        webbrowser.open('')
+    if da==4:               
+         webbrowser.open('')
+    if da==5:
+         webbrowser.open('')
+    if da==6:
+         webbrowser.open('')
+    if da==7:
+          webbrowser.open('')
+    if da==8:
+         webbrowser.open('')
+    if da==9:
+         webbrowser.open('')
+    if da==10:
+         webbrowser.open('')
+    if da==11:
+         webbrowser.open('')
+    if da==12:
+         webbrowser.open('')
+    if da==13:
+         webbrowser.open('')
+    if da==14:
+         webbrowser.open('')
+    if da==15:
+         webbrowser.open('')
+    if da==16:
+         webbrowser.open('')
+    if da==17:
+         webbrowser.open('')
+    if da==18:
+         webbrowser.open('')
+    if da==19:
+         webbrowser.open('')
+    if da==20:
+         webbrowser.open('')
+    if da==21:
+         webbrowser.open('')
+    if da==22:
+         webbrowser.open('')
+    if da==23:
+         webbrowser.open('')
+    if da==24:
+         webbrowser.open('')
+    if da==25:
+         webbrowser.open('')
+    if da==26:
+         webbrowser.open('')
+    if da==27:
+         webbrowser.open('')
+    if da==28:
+         webbrowser.open('')
+    if da==29:
+         webbrowser.open('')
+    if da==30:
+         webbrowser.open('')
+    if da==31:
+         webbrowser.open('')
+    if da==32:
+         webbrowser.open('')
+    if da==33:
+         webbrowser.open('')
+    if da==34:
+         webbrowser.open('')
+    if da==35:
+         webbrowser.open('')
+    if da==36:
+         webbrowser.open('')
+    if da==37:
+         webbrowser.open('')
+    if da==38:
+         webbrowser.open('')
+    if da==39:
+         webbrowser.open('')
+weather()         
+    

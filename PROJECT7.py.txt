@@ -1,0 +1,13 @@
+def project7():
+    import urllib
+    import webbrowser
+    print('''select your choice
+    1.Check availability(both private and co-op)
+    2.Chech variety and price(hybridised seeds)''')
+    so=int(input('Enter your choice no:'))
+    if so==1:
+        availurl=webbrowser.open('http://122.15.179.102/seed_private/public_seed')
+    elif so==2:
+        
+        
+

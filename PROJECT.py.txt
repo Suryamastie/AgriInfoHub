@@ -1,0 +1,20 @@
+
+print('''         1.Agriculture
+         2.Farmer's store(Buy and sell)
+         3.Intercropping
+         4.Market price
+         5.Weather
+         6.Fertilisers
+         7.Seeds(availability&variety)
+         8.Tools suggestion
+         9.Agriculture studies
+         10.Government policies''')
+a=int(input('Enter choice no:'))
+if a==1:
+    
+    from projectone import agriculture
+    agriculture()
+    
+    
+
+         

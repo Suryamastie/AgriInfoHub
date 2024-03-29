@@ -1,0 +1,295 @@
+print('''select committee
+           1.Kancheepuram     12.Pudukkottai     23.Chennai
+             2.Cuddalore        13.Madurai         24.Perambalur
+             3.Villupuram       14.Ramanathapuram  25.Namakkal
+             4.Vellore          15.Thirunelveli    26.Sivagangai
+             5.Tiruvannamalai   16.Kanyakumari     27.Virudhunagar
+             6.Salem            17.Theni
+             7.Erode            18.Dindigul
+             8.Coimbatore       19.Nagapattinam
+             9.Dharmapuri       20.Thiruvarur
+             10.Trichy          21.Nilgiris
+             11.Thanjavur       22.Thiruppur''')
+x=int(input('Enter committee no:'))
+y={1:'''       1.Kancheepuram
+        2.Madurantagam
+        3.Uthirameerur
+        4.Thirukkalukundram
+        5.Sunguvarchatram
+        6.Acharapakkam
+        7.Chengalpet
+        8.Thiruthani
+        9.Thiruvallur
+        10.Red hills
+        11.Ponneri
+        12.Pallipattu
+        13.Uthukottai
+        14.Gummidipoondi
+        15.Nasarethpettai'''
+   ,2:'''      1.Virudhachalam
+        2.Cuddalore
+        3.Panruti
+        4.Thittakudi
+        5.Kattumannarkoil
+        6.Chidambaram
+        7.Kuruchipadi
+        8.Sethiyathoppu
+        9.Srimushnam
+        10.Bhuvanagiri'''
+   ,3:'''       1.Tindivanam
+         2.Thirukoilur
+         3.Ulundurpet
+         4.Villupuram
+         5.Chinnasalem
+         6.kallakurichi
+         7.Ginngee
+         8.Thiagadurgam
+         9.Sankarapuram
+         10.Thiruvennnainallur
+         11.Manalurpet
+         12.Avalurpet
+         13.Marakkanam
+         14.Vikaravandi
+         15.Anathapuram
+         16.Valathi
+         17.Moongilthuraipattu
+         18.Thirunavalur'''
+   ,4:'''       1.Vellore
+         2.Thirupathur
+         3.Arcot
+         4.Arakonam
+         5.Vaniyambadi
+         6.Kaveripakkam
+         7.Gudiyatham
+         8.Kalavai
+         9.Ammoor
+         10.Katpadi
+         11.Ambur
+         12.Thimiri'''
+   ,5:'''       1.Thiruvannamalai
+         2.Arani
+         3.Vandavasi
+         4.Chetpet
+         5.Cheyyar
+         6.Polur
+         7.Chengam
+         8.Pudupalayam
+         9.Vanapuram
+         10.Vettavalam
+         11.Thellar
+         12.MangakaMamandoor
+         14.Peranamallur
+         15.Dhusi
+         16.Kilpennathur
+         17.Adamangalampudur
+         18.Naidumanagalam''',
+   6:'''        1.Salem
+       2.Athur
+       3.Sankagiri
+       4.Konganapuram
+       5.Kollathur
+       6.Meicheri
+       7.Thammampatti
+       8.Thalaivasal
+       9.Omalur
+       10.Kadayampatti
+       11.Gangavalli
+       12..Karumanthurai
+       13.Vazhapadi
+       14.Edappadi'''
+   ,7:'''         1.Erode
+        2.Avalpoonthurai
+        3.Kodumudi
+        4.Sivagiri
+        5.Chithode
+        6.Bhavani
+        7.Boothapadi
+        8.Mylampadi
+        9.Kavundhampadi
+        10.Gobichettipalayam                                                                                                                                                   11.Sathyamangalam
+        12.Punjai Pulliyampatti
+        13.Thalavadi
+        14.Perundurai
+        15.Elumathur
+        16.Anthiyur
+        17.Nambiyur
+        18.Vellankoil'''
+   ,8:'''       1.Annur
+        2.Karamadai
+        3.Coimbatore
+        4.Sulur
+        5.Anaimalai
+        6.Pollachi
+        7.Malayadipalayam
+        8.Kinathukkadavu
+        9.Thondamuthur
+        10.Negamam'''
+   ,9:'''        1.Darmapuri
+        2.Krishnagiri
+        3.Hosur
+        4.Kelamangalam
+        5.Palacode
+        6.Pennagaram
+        7.Pochampalli
+        8.Uthangarai
+        9.Harur
+        10.Pappireddipattai
+        11.Barggor
+        12.Rayakottai
+        13.Denkanikkottai
+        14.Papparapattai
+        15.Kambalinallur
+        16.Kaveripattinam'''
+   ,10:'''       1.Karur
+        2.Manapparai
+        3.Thuraiyur
+        4.Lalgudi
+        5.Thiruchirapalli
+        6.Thottiyam
+        7.Manachanallur
+        8.Kulithalai
+        9.Thuvarankurichi
+        10.Irumputhipatti
+        11.Chinnatharapuram
+        12.Pullambadi
+        13.Thathaiyangarpet
+        14.Kattuput'''
+   ,11:'''       1.Athiramapattinam
+        2.Ammapettai
+        3.Budalur
+        4.Kumbakonam
+        5.Madukkur
+        6.Orathanadu
+        7.Pattukotai
+        8.Papanasam
+        9.Peravooranai
+        10.Thanjavur
+        11.Vallam
+        12.Thirupananthal
+        13.Pappanadu'''
+   ,12:'''       1.Alangudi
+        2.Aranthangi
+        3.Pudukottai
+        4.Kandarvakkaottai
+        5.Avudayarkoil
+        6.Keeranur
+        7.Keeramangalam
+        8.Ponnamaravathi
+        9.Illupppur
+        10.Karambakkudi'''
+   ,13:'''       1.Thirumangalam
+        2.Usilampatti
+        3.Melur
+        4..Madurai
+        5.T.Kallupatti
+        6.Vadipatti'''
+   ,14:'''        1.Ramanathapuram
+        2.Paramakudi
+        3.Kamuthhi
+        4.Thiruvadanai
+        5.Rajasingamangalam
+        6.Mudukulatghur'''
+   ,15:'''       1.Kovilpatti
+        2.Sankarankoil
+        3.Thoothukudi
+        4.Pudur
+        5.Kadambur
+        6.Kalugumalai
+        7.Thenkasi
+        8.Ambasamudram
+        9.Valliyur
+        10.Srivaikundam
+        11.Thirunelveli
+        12.Vilathikulam
+        13.Kadayanallur
+        14.Thisayanvilai
+        15.Pavurchatram
+        16.Thiruvenkadam
+        17.Ettayapuram
+        18.Sivagiri
+        19.Alangulam
+        20.Sathankulam'''
+   ,16:'''     1.Ethamozhi
+        2.Vadaseri
+        3.Kalakkavilai
+        4.Monday Market
+        5.Kulasekaram
+        6.Thoduvatti'''
+   ,17:'''     1.Theni
+        2.Cumbum
+        3.Bodinayakanur
+        4.Chinnamanur
+        5.Andipatti
+        6.Uthamapalyam
+        7.Periyakulam'''
+   ,18:'''      1.Didigul
+        2.Oddanchatram
+        3.Palani
+        4.Natham
+        5.Batlagunndu
+        6.Gopalpatti
+        7.Vadamadurai
+        8.Vedachandur'''
+   ,19:'''      1.Kivalur
+        2.Kuttalam
+        3.Mayiladuthurai
+        4.Nagapattinam
+        5.Sembanarkopil
+        6.Sirkazhi
+        7.Vedaranayam
+        8.Thirupoondi'''
+   ,20:'''       1.Valangaiman
+        2.Koradacheri
+        3.Mannarkudi
+        4.Poonthottam
+        5.Vaduvur
+        6.Kudavasal
+        7.Thiruvarur
+        8.Thiruthuraipoondi'''
+   ,21:'''        1.Udagamandalam
+        2.Kothagiri
+        3.Coonoor
+        4.Gudalur'''
+   ,22:'''        1.Vellakkoil
+        2.Thiruppur
+        3.Avinashi
+        4.Sevur
+        5.Palladam
+        6.Udumalpettai
+        7.Madathukkulam
+        8.Pethappampatti
+        9.Pongalur
+        10.Kunnathur
+        11.Kangayam
+        12.Dharapuram
+        13.Moolanur
+        14.Alangiam
+        15.Muthur'''
+   ,23:'Not found'
+   ,24:'''        1.Jayakondam
+        2.Ariyalur
+        3.Andimadam
+        4.Perambalur
+        5.Melanikuzhi
+        6.Poolambadi'''
+   ,25:'''        1.Nammakal
+        2.Rasipuram
+        3.Thiruchengodu
+        4.Velur
+        5.Namagiripettai
+        6.Cholakkadu'''
+   ,26:'''        1.Sivagangai
+        2.Thiruppuvanam
+        3.Manamadurai
+        4.Singampuneri
+        5.Karaikudi
+        6.Ilayankudi
+        7.Devakkottai'''
+   ,27:'''        1.Virudhunagar
+        2.Rajapalayam
+        3.Sathur
+        4.Aruppukottai
+        5.Srivilliputhur
+        6.Watrap
+        7.Vembakkottai'''}
+print('select market',y[x],sep='\n')
